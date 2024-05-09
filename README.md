@@ -15,11 +15,50 @@ db.empleats.find({empleat_id:"100"},{})
 
 4. Recupera els empleats amb el càrrec de “President” 
 ```js
-db.empleats.find({feina.nom:"President"},{})
+db.empleats.find({"feina.nom":"President"},{})
 ```
 
 5. Recupera els empleats que treballen al departament de “IT” 
 ```js
-
+db.empleats.find({"departament.nom":"IT"},{})
 
 ```
+
+6. Recupera els empleats que van ser contractats a partir de l’1 de gener de 1985 
+```js
+
+````
+7. Recupera els empleats amb un salari superior a 2000 
+```js
+
+````
+
+8. Recupera els empleats amb un salari entre 2000 i 6000 
+```js
+
+````
+
+9. Recupera els empleats que el seu número de telèfon comença per 515 
+```js
+
+````
+
+10. Recupera els empleats que no treballin de Vice President. Utilitza el codi de la feina "AD_VP" 
+```js
+
+````
+
+11. Recupera els empleats que tenen pct_comissio. 
+```js
+
+````
+
+12. Recupera els empleats que tenen pct_comissio i hagi treballat o treballin actualment de "Cap de Vendes" . Utilitza el codi de feina "SA_MAN". 
+```js
+
+````
+
+13. Recupera els empleats que han tingut 2 feines. No tinguis en compte la feina actual
+```js
+
+````
