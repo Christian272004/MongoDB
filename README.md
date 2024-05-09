@@ -26,16 +26,16 @@ db.empleats.find({"departament.nom":"IT"},{})
 
 6. Recupera els empleats que van ser contractats a partir de l’1 de gener de 1985 
 ```js
-
+db.empleats.find({data_contractacio: {$gte : new Date("1985-01-01")}})
 ````
 7. Recupera els empleats amb un salari superior a 2000 
 ```js
-
+db.empleats.find({salari:{$gte:2000}},{})
 ````
 
 8. Recupera els empleats amb un salari entre 2000 i 6000 
 ```js
-
+db.empleats.find({salari:{$in:[2000,6000]}},{})
 ````
 
 9. Recupera els empleats que el seu número de telèfon comença per 515 
